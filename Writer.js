@@ -8,7 +8,10 @@ class Writer {
 
     async Write(fileName, data) {
         try {
+            console.log("Criando Arquivo HTML...")
             await this.writer(fileName, data)
+            console.log("Arquivo HTML criado!")
+            console.log("Criando PDF...")
             return true
         } catch {
             return false
